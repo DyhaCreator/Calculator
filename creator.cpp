@@ -14,5 +14,11 @@ int main() {
             out << "    print(" << i + j << ")" << std::endl;
         }
     }
+    for (int i = first_min; i <= first_max; i++) {
+        for (int j = second_min; j <= second_max; j++) {
+            out << "if int(a[0]) == " << i << " and a[1] == '-' and int(a[2]) == " << j << ":" << std::endl;
+            out << "    print(" << i - j << ")" << std::endl;
+        }
+    }
     return 0;
 }
